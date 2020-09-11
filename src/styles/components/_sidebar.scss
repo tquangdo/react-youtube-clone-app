@@ -1,0 +1,11 @@
+.SideBar {
+  flex: 0.1;
+  min-width: 200px;
+
+  hr {
+    border: none;
+    height: 1.5px;
+    background: rgb(199, 199, 199);
+    margin: 10px 0;
+  }
+}
