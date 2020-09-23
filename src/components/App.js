@@ -6,7 +6,10 @@ import RecommendedVideos from './RecommendedVideos';
 import SearchPage from './SearchPage';
 import Loader from './Loader';
 import axios from 'axios';
-import { YOUTUBE_SNIPPET_URL, YOUTUBE_SEARCHKW_DEFAULT } from '../utils/common/constant';
+import {
+  YOUTUBE_SNIPPET_URL, YOUTUBE_SEARCHKW_DEFAULT,
+  HOME1_URL, HOME2_URL, SEARCH_URL
+} from '../utils/common/constant';
 
 const App = () => {
   const [stateMovies, setMovies] = useState([]);
@@ -44,13 +47,19 @@ const App = () => {
         handleInput={onHandleInput}
       />
       <Switch>
-        <Route exact path='/youtube-clone-app'>
+        <Route exact path={HOME1_URL}>
           <div className='contents'>
             <SideBar />
             {stateIsLoading ? <Loader /> : <RecommendedVideos movies={stateMovies} />}
           </div>
         </Route>
-        <Route path='/youtube-clone-app/search'>
+        <Route path={HOME2_URL}>
+          <div className='contents'>
+            <SideBar />
+            {stateIsLoading ? <Loader /> : <RecommendedVideos movies={stateMovies} />}
+          </div>
+        </Route>
+        <Route path={SEARCH_URL}>
           <div className='contents'>
             <SideBar />
             {stateIsLoading ? <Loader /> : <SearchPage movies={stateMovies} />}

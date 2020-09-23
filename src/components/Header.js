@@ -8,13 +8,14 @@ import SearchIcon from '@material-ui/icons/Search';
 import Avatar from '@material-ui/core/Avatar';
 import YoutubeLogo from '../img/yt_logo_rgb_light.png';
 import AvatarDefault from '../img/4.png';
+import { HOME1_URL, SEARCH_URL } from '../utils/common/constant';
 
 const Header = ({ input, handleSearch, handleInput }) => {
   return (
     <header className='MainHeader'>
       <div className='MainHeader__left'>
         <MenuIcon />
-        <Link to='/youtube-clone-app'>
+        <Link to={HOME1_URL}>
           <img
             className='MainHeader__logo'
             src={YoutubeLogo}
@@ -29,7 +30,7 @@ const Header = ({ input, handleSearch, handleInput }) => {
           value={input}
           onChange={handleInput}
         />
-        <Link to='/youtube-clone-app/search'>
+        <Link to={SEARCH_URL}>
           <button type="submit" onClick={handleSearch}>
             <SearchIcon />
           </button>
