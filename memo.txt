@@ -1,0 +1,4 @@
+1/ REACT_APP_APIKEY
+* https://console.developers.google.com/apis/credentials
+* chọn project: TH này là "netflix-clone-app"
+* API Keys > Key=AIzaS...
