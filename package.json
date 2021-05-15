@@ -1,6 +1,6 @@
 {
-  "homepage": "http://tquangdo.github.io/youtube-clone-app",
-  "name": "youtube-clone-app",
+  "homepage": "http://tquangdo.github.io/react-youtube-clone-app",
+  "name": "react-youtube-clone-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
